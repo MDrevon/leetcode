@@ -66,4 +66,20 @@ var twoSum = function (nums, target) {
   }
 };
 
-console.log(twoSum([2, 7, 11, 15], 9));
+//console.log(twoSum([2, 7, 11, 15], 9));
+
+/** Is Palindrome Number
+ * @param {number} x
+ * @return {boolean}
+ */
+var isPalindrome = function (x) {
+  let numArray = String(x).split("");
+  let reversedArray = numArray.reverse();
+
+  if (x === Number(reversedArray.join(""))) {
+    return true;
+  }
+  return false;
+};
+
+//console.log(isPalindrome(1212));
